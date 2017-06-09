@@ -1,0 +1,30 @@
+//
+//  Debug.xcconfig
+//  AdForMerchant
+//
+//  Created by Koh Ryu on 2016/11/23.
+//  Copyright © 2016年 Windward. All rights reserved.
+//
+
+#include "Pods/Target Support Files/Pods-AdForMerchant/Pods-AdForMerchant.debug.xcconfig"
+
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+CODE_SIGN_IDENTITY = iPhone Developer
+
+PRODUCT_BUNDLE_IDENTIFIER = cn.msh.mobile.mall.seller.dev
+
+DEVELOPMENT_TEAM = W9B5AM43M3
+
+CODE_SIGN_IDENTITY = iPhone Developer
+SWIFT_OPTIMIZATION_LEVEL = -O
+
+PRODUCT_NAME = AdForMerchant
+
+
+// URL !地址后面不要带 /
+DOMAIN_URL = msh.chcts.cn
+DOMAIN_ENV = dev
+ENCRYPT = false
+
+PUSH_APP_KEY = 820f69899702b066e34b62a70cb8543e
+PUSH_APP_SECRET = ca6923ef37a9007eafd7f2595e6675627190e2b997dba00aa1c14800771ae32c

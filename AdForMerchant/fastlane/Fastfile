@@ -1,0 +1,95 @@
+fastlane_version "2.30.2"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+  end
+
+  desc " 更新版本 "
+  lane :bump do
+    ensure_git_branch(
+      branch: 'develop'
+    )
+    ensure_git_status_clean
+    git_pull    
+    increment_build_number(
+      xcodeproj: 'AdForMerchant.xcodeproj'
+    )
+    build = Actions.lane_context[Actions::SharedValues::BUILD_NUMBER]
+    commit_version_bump(
+      message: "Build #{build}",
+      xcodeproj: 'AdForMerchant.xcodeproj'
+    )
+    push_to_git_remote(
+      remote: 'origin',         # optional, default: 'origin'
+      local_branch: 'develop',  # optional, aliased by 'branch', default: 'master'
+      remote_branch: 'develop', # optional, default is set to local_branch
+      force: false,              # optional, default: false
+      tags: false               # optional, default: true
+    )        
+  end  
+  
+  desc " TestFlight "
+  lane :beta do
+    ipa = gym(
+      scheme: "AdForMerchant",
+      configuration: "Testflight",
+      clean: true,
+      include_bitcode: true,
+      output_directory: 'Build/Testflight'
+    )
+    pilot(
+      ipa: ipa,
+      skip_submission: true,
+      skip_waiting_for_build_processing: true
+    )
+  end
+
+  desc " 运营版 "
+  lane :sftp do
+    ipa = gym(
+      scheme: "AdForMerchant",
+      configuration: "Inhouse",
+      clean: true,
+      export_method: 'enterprise',
+      include_bitcode: true,
+      output_directory: 'Build/Inhouse'
+    )
+
+    sh "echo 'put #{ipa} ' ota/> ./ota.txt"
+    sh "sftp -b ota.txt -i ~/.ssh/ww_id_rsa ota@user.msh.chcts.cc"
+  end
+
+  desc " 更新版本，打包并发布 TestFlight "
+  lane :ota do
+    bump
+    beta
+  end
+
+  after_all do |lane|
+    ifttt(
+      api_key: "6AkA7VbdF6CeDjMfI5vNs",
+      event_name: "TestFlight",
+      value1: "商户版 TestFlight 成功"
+    )
+    notification(
+      title: "商户版 finished '#{lane}' successfully",
+      message: "完成"
+    ) 
+  end
+
+  error do |lane, exception|
+    ifttt(
+      api_key: "6AkA7VbdF6CeDjMfI5vNs",
+      event_name: "TestFlight",
+      value1: "商户版 TestFlight 失败",
+      value2: exception.message
+    )
+    notification(
+      title: "商户版 '#{lane}' errored",
+      message: exception.message
+    ) 
+  end
+end
+

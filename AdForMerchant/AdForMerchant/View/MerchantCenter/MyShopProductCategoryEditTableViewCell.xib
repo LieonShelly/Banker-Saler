@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="94" id="enb-IM-PIT" customClass="MyShopProductCategoryEditTableViewCell" customModule="AdForMerchant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="enb-IM-PIT" id="I71-TP-AkD">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsO-Ed-ue4">
+                        <rect key="frame" x="12" y="10" width="40" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.063485667109489441" green="0.063483767211437225" blue="0.063484847545623779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tf4-LB-RBd">
+                        <rect key="frame" x="12" y="35" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.50887191295623779" green="0.52310270071029663" blue="0.59809714555740356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKQ-f1-U9q">
+                        <rect key="frame" x="12" y="61" width="60" height="20"/>
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.015686274510000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9DQ-83-DIQ"/>
+                            <constraint firstAttribute="width" constant="60" id="Nx1-Jn-KJ6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCY-vv-8XO">
+                        <rect key="frame" x="140" y="10" width="180" height="81"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnU-lg-pdg">
+                                <rect key="frame" x="117" y="4" width="55" height="72"/>
+                                <state key="normal" image="MyShopCategoryButtonDelete"/>
+                                <state key="selected" image="CellItemCheckmarkOn"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jah-Nd-59x" customClass="SeparatorLine" customModule="AdForMerchant" customModuleProvider="target">
+                                <rect key="frame" x="117" y="24" width="1" height="32"/>
+                                <color key="backgroundColor" red="0.85415387153625488" green="0.85412830114364624" blue="0.85414278507232666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="2r4-hu-EEL"/>
+                                    <constraint firstAttribute="height" constant="32" id="noX-PB-ojW"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsN-Z6-Uj5">
+                                <rect key="frame" x="73" y="0.0" width="37" height="72"/>
+                                <state key="normal" image="MyShopCategoryButtonStickOff"/>
+                                <state key="selected" image="MyShopCategoryButtonStickOn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBr-6H-cUP">
+                                <rect key="frame" x="15" y="1" width="50" height="72"/>
+                                <state key="normal" image="MyShopCategoryButtonEdit"/>
+                                <state key="selected" image="CellItemCheckmarkOn"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bK3-3m-1EN" customClass="SeparatorLine" customModule="AdForMerchant" customModuleProvider="target">
+                                <rect key="frame" x="65" y="24" width="1" height="32"/>
+                                <color key="backgroundColor" red="0.85415387153625488" green="0.85412830114364624" blue="0.85414278507232666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="0KV-oA-7Gl"/>
+                                    <constraint firstAttribute="height" constant="32" id="xmO-G1-gcK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="DnU-lg-pdg" firstAttribute="leading" secondItem="rsN-Z6-Uj5" secondAttribute="trailing" constant="7" id="2Xt-VR-yIC"/>
+                            <constraint firstItem="DnU-lg-pdg" firstAttribute="leading" secondItem="rsN-Z6-Uj5" secondAttribute="trailing" constant="7" id="5Bf-XU-Tkk"/>
+                            <constraint firstItem="rsN-Z6-Uj5" firstAttribute="leading" secondItem="oBr-6H-cUP" secondAttribute="trailing" constant="8" id="A5q-PA-Ztz"/>
+                            <constraint firstAttribute="trailing" secondItem="DnU-lg-pdg" secondAttribute="trailing" constant="8" id="AlK-1Z-AP3"/>
+                            <constraint firstItem="Jah-Nd-59x" firstAttribute="leading" secondItem="rsN-Z6-Uj5" secondAttribute="trailing" constant="7" id="CHJ-RQ-z8y"/>
+                            <constraint firstItem="rsN-Z6-Uj5" firstAttribute="top" secondItem="tCY-vv-8XO" secondAttribute="top" id="CpQ-mR-el6"/>
+                            <constraint firstAttribute="bottom" secondItem="DnU-lg-pdg" secondAttribute="bottom" constant="5" id="JSA-kp-cdP"/>
+                            <constraint firstAttribute="bottom" secondItem="oBr-6H-cUP" secondAttribute="bottom" constant="8" id="MoA-Kb-Pu1"/>
+                            <constraint firstItem="bK3-3m-1EN" firstAttribute="centerY" secondItem="tCY-vv-8XO" secondAttribute="centerY" id="S4a-NK-NRD"/>
+                            <constraint firstAttribute="bottom" secondItem="rsN-Z6-Uj5" secondAttribute="bottom" constant="9" id="ShM-Wr-QKA"/>
+                            <constraint firstItem="rsN-Z6-Uj5" firstAttribute="leading" secondItem="oBr-6H-cUP" secondAttribute="trailing" constant="8" id="UuR-mH-6ls"/>
+                            <constraint firstItem="Jah-Nd-59x" firstAttribute="centerY" secondItem="bK3-3m-1EN" secondAttribute="centerY" id="WII-eq-Zru"/>
+                            <constraint firstItem="bK3-3m-1EN" firstAttribute="leading" secondItem="oBr-6H-cUP" secondAttribute="trailing" id="auE-cP-p1c"/>
+                            <constraint firstItem="DnU-lg-pdg" firstAttribute="width" secondItem="oBr-6H-cUP" secondAttribute="width" constant="5" id="k8d-Oh-BXO"/>
+                            <constraint firstAttribute="width" constant="180" id="ru5-qn-Dd8"/>
+                            <constraint firstItem="oBr-6H-cUP" firstAttribute="leading" secondItem="tCY-vv-8XO" secondAttribute="leading" constant="15" id="sC8-67-5fU"/>
+                            <constraint firstItem="oBr-6H-cUP" firstAttribute="top" secondItem="tCY-vv-8XO" secondAttribute="top" constant="1" id="siN-sy-II0"/>
+                            <constraint firstItem="rsN-Z6-Uj5" firstAttribute="width" secondItem="oBr-6H-cUP" secondAttribute="width" constant="-13" id="tBL-Wo-ia8"/>
+                            <constraint firstItem="DnU-lg-pdg" firstAttribute="top" secondItem="tCY-vv-8XO" secondAttribute="top" constant="4" id="tiq-9U-PwT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Tf4-LB-RBd" firstAttribute="top" secondItem="TsO-Ed-ue4" secondAttribute="bottom" constant="5" id="0Ao-OL-rtY"/>
+                    <constraint firstItem="Tf4-LB-RBd" firstAttribute="leading" secondItem="TsO-Ed-ue4" secondAttribute="leading" id="CnQ-PS-92b"/>
+                    <constraint firstItem="Tf4-LB-RBd" firstAttribute="top" secondItem="TsO-Ed-ue4" secondAttribute="bottom" constant="5" id="H8N-WV-JqC"/>
+                    <constraint firstAttribute="trailing" secondItem="tCY-vv-8XO" secondAttribute="trailing" id="IXg-Wr-Wfz"/>
+                    <constraint firstItem="RKQ-f1-U9q" firstAttribute="top" secondItem="Tf4-LB-RBd" secondAttribute="bottom" constant="8" id="VcQ-At-AT0"/>
+                    <constraint firstItem="tCY-vv-8XO" firstAttribute="top" secondItem="TsO-Ed-ue4" secondAttribute="top" id="Xb5-bp-G83"/>
+                    <constraint firstAttribute="bottom" secondItem="tCY-vv-8XO" secondAttribute="bottom" constant="3" id="c1v-ra-dsv"/>
+                    <constraint firstItem="TsO-Ed-ue4" firstAttribute="top" secondItem="I71-TP-AkD" secondAttribute="top" constant="10" id="d4p-W6-IPX"/>
+                    <constraint firstItem="TsO-Ed-ue4" firstAttribute="leading" secondItem="I71-TP-AkD" secondAttribute="leading" constant="12" id="m8p-FC-Qs8"/>
+                    <constraint firstItem="RKQ-f1-U9q" firstAttribute="leading" secondItem="Tf4-LB-RBd" secondAttribute="leading" id="v2z-yo-05X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cateLabel" destination="RKQ-f1-U9q" id="vxV-20-rLQ"/>
+                <outlet property="deleteButton" destination="DnU-lg-pdg" id="cGa-0q-i6P"/>
+                <outlet property="editButton" destination="oBr-6H-cUP" id="xQP-JC-7VA"/>
+                <outlet property="editContentsView" destination="tCY-vv-8XO" id="uIe-7H-kb1"/>
+                <outlet property="leftBottomTxtLabel" destination="Tf4-LB-RBd" id="v75-PB-yMk"/>
+                <outlet property="leftTopTxtLabel" destination="TsO-Ed-ue4" id="kVf-wD-Jd7"/>
+                <outlet property="stickButton" destination="rsN-Z6-Uj5" id="UII-0E-hwK"/>
+            </connections>
+            <point key="canvasLocation" x="353" y="173"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CellItemCheckmarkOn" width="19" height="19"/>
+        <image name="MyShopCategoryButtonDelete" width="17" height="19"/>
+        <image name="MyShopCategoryButtonEdit" width="18" height="18"/>
+        <image name="MyShopCategoryButtonStickOff" width="18" height="19"/>
+        <image name="MyShopCategoryButtonStickOn" width="18" height="19"/>
+    </resources>
+</document>

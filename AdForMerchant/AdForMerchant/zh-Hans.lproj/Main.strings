@@ -1,0 +1,84 @@
+
+/* Class = "UILabel"; text = "ANTHONY"; ObjectID = "8r3-gl-84U"; */
+"8r3-gl-84U.text" = "ANTHONY";
+
+/* Class = "UILabel"; text = "对准二维码到框内即可扫描"; ObjectID = "9CP-Nt-bxh"; */
+"9CP-Nt-bxh.text" = "对准二维码到框内即可扫描";
+
+/* Class = "UILabel"; text = "我的积分"; ObjectID = "9KQ-D4-wOa"; */
+"9KQ-D4-wOa.text" = "我的积分";
+
+/* Class = "UIButton"; normalTitle = "  切换扫码"; ObjectID = "Di5-rj-Fwh"; */
+"Di5-rj-Fwh.normalTitle" = "  切换扫码";
+
+/* Class = "UIButton"; normalTitle = "确定"; ObjectID = "EBb-69-imk"; */
+"EBb-69-imk.normalTitle" = "确定";
+
+/* Class = "UILabel"; text = "待发货"; ObjectID = "HIz-9P-x2K"; */
+"HIz-9P-x2K.text" = "待发货";
+
+/* Class = "UILabel"; text = " 已认证 "; ObjectID = "ILQ-RN-FL9"; */
+"ILQ-RN-FL9.text" = " 已认证 ";
+
+/* Class = "UITabBarItem"; title = "消息"; ObjectID = "Phm-9q-hu3"; */
+"Phm-9q-hu3.title" = "消息";
+
+/* Class = "UILabel"; text = "待退款"; ObjectID = "Phr-Vc-2m3"; */
+"Phr-Vc-2m3.text" = "待退款";
+
+/* Class = "UILabel"; text = "二维码/数字码"; ObjectID = "RJI-Qn-Zy4"; */
+"RJI-Qn-Zy4.text" = "二维码/数字码";
+
+/* Class = "UILabel"; text = "输入数字码"; ObjectID = "Rbb-bN-SQz"; */
+"Rbb-bN-SQz.text" = "输入数字码";
+
+/* Class = "UILabel"; text = "450 "; ObjectID = "RcD-3B-0WA"; */
+"RcD-3B-0WA.text" = "450 ";
+
+/* Class = "UITabBarItem"; title = "活动"; ObjectID = "SBe-YS-ejr"; */
+"SBe-YS-ejr.title" = "活动";
+
+/* Class = "UILabel"; text = "￥20000"; ObjectID = "YcP-Ck-TIP"; */
+"YcP-Ck-TIP.text" = "￥20000";
+
+/* Class = "UITabBarItem"; title = "广告"; ObjectID = "ZUF-JS-d5T"; */
+"ZUF-JS-d5T.title" = "广告";
+
+/* Class = "UILabel"; text = "200000"; ObjectID = "bpt-2Q-piF"; */
+"bpt-2Q-piF.text" = "200000";
+
+/* Class = "UINavigationItem"; title = "消息"; ObjectID = "cEU-MX-ag0"; */
+"cEU-MX-ag0.title" = "消息";
+
+/* Class = "UILabel"; text = "待付款"; ObjectID = "clG-Dd-D3P"; */
+"clG-Dd-D3P.text" = "待付款";
+
+/* Class = "UITabBarItem"; title = "商户中心"; ObjectID = "eEW-cw-gCu"; */
+"eEW-cw-gCu.title" = "商户中心";
+
+/* Class = "UILabel"; text = "4"; ObjectID = "iWJ-t8-TEc"; */
+"iWJ-t8-TEc.text" = "4";
+
+/* Class = "UILabel"; text = "55 "; ObjectID = "jg6-I4-D3x"; */
+"jg6-I4-D3x.text" = "55 ";
+
+/* Class = "UISegmentedControl"; kNr-1n-LNV.segmentTitles[0] = "促销活动"; ObjectID = "kNr-1n-LNV"; */
+"kNr-1n-LNV.segmentTitles[0]" = "促销活动";
+
+/* Class = "UISegmentedControl"; kNr-1n-LNV.segmentTitles[1] = "现场活动"; ObjectID = "kNr-1n-LNV"; */
+"kNr-1n-LNV.segmentTitles[1]" = "现场活动";
+
+/* Class = "UITabBarItem"; title = "商品"; ObjectID = "nRH-Jt-sNV"; */
+"nRH-Jt-sNV.title" = "商品";
+
+/* Class = "UILabel"; text = "我的收入"; ObjectID = "rsk-GX-h0f"; */
+"rsk-GX-h0f.text" = "我的收入";
+
+/* Class = "UIButton"; normalTitle = "  手动输入数字码"; ObjectID = "wFL-L1-uL6"; */
+"wFL-L1-uL6.normalTitle" = "  手动输入数字码";
+
+/* Class = "UINavigationItem"; title = "广告"; ObjectID = "xSC-J4-skG"; */
+"xSC-J4-skG.title" = "广告";
+
+/* Class = "UILabel"; text = "安全退出"; ObjectID = "ykm-e7-9TM"; */
+"ykm-e7-9TM.text" = "安全退出";

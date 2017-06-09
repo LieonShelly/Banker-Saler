@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NMb-p8-S8m" customClass="MyShopAssistantDefaultView" customModule="AdForMerchant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_no_shop_assistant" translatesAutoresizingMaskIntoConstraints="NO" id="fIe-0h-5Hu">
+                    <rect key="frame" x="133.5" y="80" width="108" height="113"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8W-gG-PMd">
+                    <rect key="frame" x="40" y="266" width="295" height="48"/>
+                    <color key="backgroundColor" red="0.090669730830000003" green="0.58163960780000001" blue="0.99800461529999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="3XN-u2-vqI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="现在去添加">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addButtonClick:" destination="NMb-p8-S8m" eventType="touchUpInside" id="8qb-Ga-amp"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂时没有店员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7F-Ua-RdV">
+                    <rect key="frame" x="141.5" y="208" width="92" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Q7F-Ua-RdV" firstAttribute="centerX" secondItem="fIe-0h-5Hu" secondAttribute="centerX" id="2qZ-A5-evl"/>
+                <constraint firstItem="fIe-0h-5Hu" firstAttribute="centerX" secondItem="NMb-p8-S8m" secondAttribute="centerX" id="9ur-fj-MpT"/>
+                <constraint firstItem="l8W-gG-PMd" firstAttribute="leading" secondItem="NMb-p8-S8m" secondAttribute="leading" constant="40" id="Bru-rG-Imc"/>
+                <constraint firstAttribute="trailing" secondItem="l8W-gG-PMd" secondAttribute="trailing" constant="40" id="PyW-dZ-kFo"/>
+                <constraint firstItem="l8W-gG-PMd" firstAttribute="top" secondItem="Q7F-Ua-RdV" secondAttribute="bottom" constant="40" id="S7C-Y0-7yS"/>
+                <constraint firstItem="fIe-0h-5Hu" firstAttribute="top" secondItem="NMb-p8-S8m" secondAttribute="top" constant="80" id="mXd-NN-iOj"/>
+                <constraint firstItem="Q7F-Ua-RdV" firstAttribute="top" secondItem="fIe-0h-5Hu" secondAttribute="bottom" constant="15" id="uow-kX-lTQ"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_no_shop_assistant" width="108" height="113"/>
+    </resources>
+</document>

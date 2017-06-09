@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="dFw-ia-OUm" customClass="AdAddAnswerTableViewCell" customModule="AdForMerchant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dFw-ia-OUm" id="HeC-Xf-S0u">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="答案A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIs-UK-QE8">
+                        <rect key="frame" x="44" y="13" width="100" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="vIn-KQ-NNi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9c-Io-rjQ">
+                        <rect key="frame" x="8" y="7" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="0Lg-ad-1ho"/>
+                            <constraint firstAttribute="height" constant="30" id="Pwi-8D-QQc"/>
+                        </constraints>
+                        <state key="normal" image="CellItemCheckmarkOn"/>
+                        <state key="selected" image="CellItemWrong"/>
+                        <connections>
+                            <action selector="selectionBtnAction:" destination="dFw-ia-OUm" eventType="touchUpInside" id="0Rt-s3-pxY"/>
+                        </connections>
+                    </button>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="设置答案" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWT-bY-O8N">
+                        <rect key="frame" x="39" y="29" width="266" height="34"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="textColor" red="0.58039215690000001" green="0.59607843140000005" blue="0.66274509800000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellItemDisclosure" translatesAutoresizingMaskIntoConstraints="NO" id="VAU-v3-jtN">
+                        <rect key="frame" x="297" y="7" width="15" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="fiK-z2-5Jx"/>
+                            <constraint firstAttribute="height" constant="29" id="md1-sh-2Ui"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WWT-bY-O8N" secondAttribute="trailing" constant="15" id="1K8-6S-UKD"/>
+                    <constraint firstItem="rIs-UK-QE8" firstAttribute="centerY" secondItem="X9c-Io-rjQ" secondAttribute="centerY" id="FIp-sD-FMU"/>
+                    <constraint firstItem="WWT-bY-O8N" firstAttribute="leading" secondItem="X9c-Io-rjQ" secondAttribute="trailing" constant="1" id="HtD-Yh-KTQ"/>
+                    <constraint firstItem="rIs-UK-QE8" firstAttribute="centerY" secondItem="HeC-Xf-S0u" secondAttribute="centerY" id="LuJ-Dt-67P"/>
+                    <constraint firstItem="rIs-UK-QE8" firstAttribute="centerY" secondItem="X9c-Io-rjQ" secondAttribute="centerY" id="OyT-Es-zfN"/>
+                    <constraint firstAttribute="bottom" secondItem="WWT-bY-O8N" secondAttribute="bottom" constant="6" id="PoA-qh-oZ5"/>
+                    <constraint firstAttribute="trailing" secondItem="VAU-v3-jtN" secondAttribute="trailing" constant="8" id="QAp-28-trW"/>
+                    <constraint firstItem="VAU-v3-jtN" firstAttribute="top" secondItem="HeC-Xf-S0u" secondAttribute="top" constant="7" id="UZA-gK-dpu"/>
+                    <constraint firstItem="rIs-UK-QE8" firstAttribute="leading" secondItem="HeC-Xf-S0u" secondAttribute="leading" constant="44" id="VIu-2j-0F5"/>
+                    <constraint firstItem="X9c-Io-rjQ" firstAttribute="top" secondItem="HeC-Xf-S0u" secondAttribute="top" constant="7" id="VOr-8p-P6e"/>
+                    <constraint firstItem="X9c-Io-rjQ" firstAttribute="leading" secondItem="HeC-Xf-S0u" secondAttribute="leading" constant="8" id="kpZ-ym-9vM"/>
+                    <constraint firstItem="WWT-bY-O8N" firstAttribute="top" secondItem="HeC-Xf-S0u" secondAttribute="top" constant="29" id="o2N-0M-UPq"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="FIp-sD-FMU"/>
+                        <exclude reference="LuJ-Dt-67P"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailTxtView" destination="WWT-bY-O8N" id="k04-aF-FAx"/>
+                <outlet property="disclousureImage" destination="VAU-v3-jtN" id="nUX-0Z-7Gf"/>
+                <outlet property="leftTxtLabel" destination="rIs-UK-QE8" id="QYD-hH-oQ0"/>
+                <outlet property="selectionButton" destination="X9c-Io-rjQ" id="6tl-k2-qKl"/>
+            </connections>
+            <point key="canvasLocation" x="298" y="295"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CellItemCheckmarkOn" width="19" height="19"/>
+        <image name="CellItemDisclosure" width="10" height="17"/>
+        <image name="CellItemWrong" width="19" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zX0-5l-ZPZ" customClass="DefaultTxtTableViewCell" customModule="AdForMerchant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zX0-5l-ZPZ" id="k7R-Aj-fFa">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="LabelLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWr-Ms-d8o">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="xsn-1J-NEn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.063485667109489441" green="0.063483767211437225" blue="0.063484847545623779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xsn-1J-NEn"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单位单位单位单位单位单位单位单位单位单位" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ll-lE-nta">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="v4k-FR-VJ2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.063485667109489441" green="0.063483767211437225" blue="0.063484847545623779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="v4k-FR-VJ2"/>
+                            </mask>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="wWr-Ms-d8o" firstAttribute="centerY" secondItem="k7R-Aj-fFa" secondAttribute="centerY" id="7MN-LX-QzG"/>
+                    <constraint firstItem="3ll-lE-nta" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wWr-Ms-d8o" secondAttribute="trailing" constant="10" id="BqC-ix-ig3"/>
+                    <constraint firstItem="3ll-lE-nta" firstAttribute="width" secondItem="wWr-Ms-d8o" secondAttribute="width" id="bMs-kI-CAx"/>
+                    <constraint firstItem="3ll-lE-nta" firstAttribute="centerY" secondItem="k7R-Aj-fFa" secondAttribute="centerY" id="c0h-Wn-XLA"/>
+                    <constraint firstItem="wWr-Ms-d8o" firstAttribute="leading" secondItem="k7R-Aj-fFa" secondAttribute="leading" constant="12" id="v1c-6z-Zej"/>
+                    <constraint firstAttribute="trailing" secondItem="3ll-lE-nta" secondAttribute="trailing" constant="8" id="vC3-PR-Fm2"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="bMs-kI-CAx"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftTxtLabel" destination="wWr-Ms-d8o" id="x8f-je-KoO"/>
+                <outlet property="rightTxtLabel" destination="3ll-lE-nta" id="xlQ-o7-eeQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

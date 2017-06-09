@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="OrderAddressDetailTableViewCell" customModule="AdForMerchant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OrderIconAddress" translatesAutoresizingMaskIntoConstraints="NO" id="QlC-vm-Exl">
+                        <rect key="frame" x="8" y="23" width="30" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="3xW-yH-34J"/>
+                            <constraint firstAttribute="width" constant="30" id="DlS-dZ-sSx"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="13455556666，熊熊熊，武侯区发都市家纺大世界" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FeU-VN-C8Z">
+                        <rect key="frame" x="38" y="8" width="385" height="73"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QlC-vm-Exl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="KGl-4H-J9T"/>
+                    <constraint firstItem="QlC-vm-Exl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="R83-G2-qPT"/>
+                    <constraint firstItem="FeU-VN-C8Z" firstAttribute="leading" secondItem="QlC-vm-Exl" secondAttribute="trailing" id="X4K-73-efk"/>
+                    <constraint firstItem="FeU-VN-C8Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="g7c-Ad-vD9"/>
+                    <constraint firstAttribute="bottom" secondItem="FeU-VN-C8Z" secondAttribute="bottom" constant="8" id="lG6-5V-HlY"/>
+                    <constraint firstAttribute="trailing" secondItem="FeU-VN-C8Z" secondAttribute="trailing" constant="8" id="qc9-b1-7eq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="txtView" destination="FeU-VN-C8Z" id="qID-ei-5pl"/>
+            </connections>
+            <point key="canvasLocation" x="355.5" y="351"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="OrderIconAddress" width="14" height="19"/>
+    </resources>
+</document>
